@@ -14,14 +14,14 @@ How to download the data from remote server:
 
 #### There are many applications which uses this feature to update itself liek Firefox, Chrome etc.
 
-Malicious use of BITS:
+### Malicious use of BITS:
 -   
    1. Win32/StealthFalcon backdoor as reported by ESET researchers.
    2. Zlob.Q trojan as reported by secureworks.
    3. UBoatRAT as reported by paloaltonetworks.
    4. Older Version of bazarLoad alos used this feature.
 
-There are primarily many advantages of BITS for malware:
+### There are primarily many advantages of BITS for malware (Tools, Tactics and Procedure):
 -
    * Defense Evasion:  T1197, https://attack.mitre.org/techniques/T1197, Security Operations often do not analyse this traffic as it is mostly use by windows.
    * Persistance :  T1197, https://attack.mitre.org/techniques/T1197, BITS can be configured to keep downloading the paylaod after certain period of time.
@@ -30,7 +30,7 @@ There are primarily many advantages of BITS for malware:
    * Exfiltration: T1029, https://attack.mitre.org/techniques/T1029, we can periodically send the data to remote server.
 
 
-Reference:
+### Reference:
 -
    * https://unit42.paloaltonetworks.com/unit42-uboatrat-navigates-east-asia/
    * https://www.secureworks.com/blog/malware-lingers-with-bits
