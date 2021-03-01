@@ -10,7 +10,7 @@ In short it uses the free bandwidth to downlaod software updates.
 
 How to download the data from remote server:
     There is a powershell command utility available :
-    Start-BitsTransfer -Source "https://example.com/file.zip" -Destination "C:\file.zip" -DisplayName "myDownloadJob"
+    ```Start-BitsTransfer -Source "https://example.com/file.zip" -Destination "C:\file.zip" -DisplayName "myDownloadJob" ```
 
 #### There are many applications which uses this feature to update itself liek Firefox, Chrome etc.
 
@@ -21,7 +21,7 @@ How to download the data from remote server:
    3. UBoatRAT as reported by paloaltonetworks.
    4. Older Version of bazarLoad alos used this feature.
 
-### There are primarily many advantages of BITS for malware (Tools, Tactics and Procedure):
+### There are primarily many advantages of BITS for malware \(Tools, Tactics and Procedure\):
 -
    * Defense Evasion:  T1197, https://attack.mitre.org/techniques/T1197, Security Operations often do not analyse this traffic as it is mostly use by windows.
    * Persistance :  T1197, https://attack.mitre.org/techniques/T1197, BITS can be configured to keep downloading the paylaod after certain period of time.
