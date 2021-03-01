@@ -8,8 +8,7 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
+Security Researcher.
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[vidyasagar.panjri@gmail.com](mailto:vidyasagar.panjri@gmail.com)
