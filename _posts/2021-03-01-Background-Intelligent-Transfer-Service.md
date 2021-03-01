@@ -9,14 +9,14 @@ Next you can update your site name, avatar and other options using the _config.y
 
 ##  Background Intelligent Transfer Service
 
-###  As the name suggest the BITS is a feature in windows, which start downloading the windows updates when there is no or minimal network activity is observered.
+As the name suggest the BITS is a feature in windows, which start downloading the windows updates when there is no or minimal network activity is observered.
 In short it uses the free bandwidth to downlaod software updates.
 
-### How to download the data from remote server:
+How to download the data from remote server:
     There is a powershell command utility available :
     Start-BitsTransfer -Source "https://example.com/file.zip" -Destination "C:\file.zip" -DisplayName "myDownloadJob"
 
-### There are many applications which uses this feature to update itself liek Firefox, Chrome etc.
+#### There are many applications which uses this feature to update itself liek Firefox, Chrome etc.
 
 Malicious use of BITS:
 -
