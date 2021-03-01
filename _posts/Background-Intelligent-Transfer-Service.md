@@ -1,3 +1,12 @@
+---
+layout: post
+title: Background Intelligent Transfer Service
+---
+
+Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+
+![_config.yml]({{ site.baseurl }}/images/config.png)
+
 ##  Background Intelligent Transfer Service
 
 ###  As the name suggest the BITS is a feature in windows, which start downloading the windows updates when there is no or minimal network activity is observered.
