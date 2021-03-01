@@ -15,7 +15,6 @@ How to download the data from remote server:
 #### There are many applications which uses this feature to update itself liek Firefox, Chrome etc.
 
 Malicious use of BITS:
-
     1. Win32/StealthFalcon backdoor as reported by ESET researchers.
     2. Zlob.Q trojan as reported by secureworks.
     3. UBoatRAT as reported by paloaltonetworks.
@@ -32,7 +31,6 @@ There are primarily many advantages of BITS for malware:
 
 
 Reference:
-
     * https://unit42.paloaltonetworks.com/unit42-uboatrat-navigates-east-asia/
     * https://www.secureworks.com/blog/malware-lingers-with-bits
     * https://attack.mitre.org/
