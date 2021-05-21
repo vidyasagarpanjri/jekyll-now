@@ -14,7 +14,7 @@ title: Creating filter template for apimonitor
  But problem I face is to quicly find out what apis to monitor how quckly we can check/select those apis.
  
  As I wrote this script specily for malware analysis, I used peframe by [@guelfoweb](https://twitter.com/guelfoweb) to get possible APIs.
- [![asciicast](https://github.com/vidyasagarpanjri/vidyasagarpanjri.github.io/blob/master/_posts/data/2021-05-21/peframe_result.cast)](https://github.com/vidyasagarpanjri/vidyasagarpanjri.github.io/blob/master/_posts/data/2021-05-21/peframe_result.cast)
+ [![asciicast](https://asciinema.org/a/pRG8MROJMfcptYBrbXjWmLwOX)](https://asciinema.org/a/pRG8MROJMfcptYBrbXjWmLwOX)
  
  I have modified the the peframe little bit to get APIs along with their libraries names, something like "KERNEL32.TerminateProcess".
     update "peframe/peframe/modules/apialert.py" file
