@@ -7,8 +7,8 @@ title: Creating filter template for apimonitor
 
 ### Tools used
   
-  API Monitor v2 (Alpha-r13) - x86 32-bit     [Download as per your OS](http://www.rohitab.com/downloads)
-  peframe   [DOwnload and install from here](https://github.com/guelfoweb/peframe)
+  * API Monitor v2 (Alpha-r13) - x86 32-bit     [Download as per your OS](http://www.rohitab.com/downloads)
+  * peframe   [DOwnload and install from here](https://github.com/guelfoweb/peframe)
   
 ### Problem statement  
 
