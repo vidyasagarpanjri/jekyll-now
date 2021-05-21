@@ -3,18 +3,58 @@ layout: post
 title: ObliqueRAT
 ---
 
-##ObliqueRAT
-Maldoc
-    * Document file(docx) dropped the exe auto open -> deobfuscate -> write to file
-    * Ole file contains Stomped code [for detail] (https://medium.com/walmartglobaltech/vba-stomping-advanced-maldoc-techniques-612c484ab278)
-    * Contains suspicious  strings [for details](https://github.com/vidyasagarpanjri/vidyasagarpanjri.github.io/blob/master/_posts/data/obliqueRAT/README.md)
+### ObliqueRAT
+Hash: dfad2a80dac91e7703266197ebbf5d67ef77467ab341dd491ad25d92d8118cac
 
-Deobfuscate Maldoc:
-    * use oledump to dump the data
-    * Macros/UserForm1/o contians the obfuscated data for exe
-    * deobfuscate split with 'O' -> convet the int values to char -> write to file
+#### Maldoc
+   * Document file(docx) dropped the exe auto open -> deobfuscate -> write to file
+   * Ole file contains Stomped code [for detail](https://medium.com/walmartglobaltech/vba-stomping-advanced-maldoc-techniques-612c484ab278)
+   * Contains suspicious  strings [for details](https://github.com/vidyasagarpanjri/vidyasagarpanjri.github.io/blob/master/_posts/data/obliqueRAT/README.md)
 
-[deobfu.py]()
+#### Deobfuscate Maldoc:
+   * use oledump to dump the data 
+   * ```python oledump.py -d -s 11 ~/Downloads/dfad2a80dac91e7703266197ebbf5d67ef77467ab341dd491ad25d92d8118cac.docx > stream11.bin```
+   * Macros/UserForm1/o contians the obfuscated data for exe 
+   * deobfuscate split with 'O' -> convet the int values to char -> write to file
 
+#### olevba3 summary
+```
++----------+--------------------+---------------------------------------------+
+|Type      |Keyword             |Description                                  |
++----------+--------------------+---------------------------------------------+
+|AutoExec  |Document_Close      |Runs when the Word document is closed        |
+|AutoExec  |Document_Open       |Runs when the Word or Publisher document is  |
+|          |                    |opened                                       |
+|AutoExec  |UserForm_Click      |Runs when the file is opened and ActiveX     |
+|          |                    |objects trigger events                       |
+|Suspicious|Environ             |May read system environment variables        |
+|Suspicious|Open                |May open a file                              |
+|Suspicious|Write               |May write to a file (if combined with Open)  |
+|Suspicious|Put                 |May write to a file (if combined with Open)  |
+|Suspicious|Binary              |May read or write a binary file (if combined |
+|          |                    |with Open)                                   |
+|Suspicious|Shell               |May run an executable file or a system       |
+|          |                    |command                                      |
+|Suspicious|WScript.Shell       |May run an executable file or a system       |
+|          |                    |command                                      |
+|Suspicious|Call                |May call a DLL using Excel 4 Macros (XLM/XLF)|
+|Suspicious|MkDir               |May create a directory                       |
+|Suspicious|CreateObject        |May create an OLE object                     |
+|Suspicious|Windows             |May enumerate application windows (if        |
+|          |                    |combined with Shell.Application object)      |
+|Suspicious|Hex Strings         |Hex-encoded strings were detected, may be    |
+|          |                    |used to obfuscate strings (option --decode to|
+|          |                    |see all)                                     |
+|IOC       |sgrmbrokr.exe       |Executable file name                         |
+|Suspicious|VBA Stomping        |VBA Stomping was detected: the VBA source    |
+|          |                    |code and P-code are different, this may have |
+|          |                    |been used to hide malicious code             |
++----------+--------------------+---------------------------------------------+
+```
+
+#### Script to deobfuscate ole data
+[deobfu.py](https://github.com/vidyasagarpanjri/vidyasagarpanjri.github.io/blob/master/_posts/data/obliqueRAT/deobfu.py)
+
+```python3 deobfu.py stream11.bin```
 
 
