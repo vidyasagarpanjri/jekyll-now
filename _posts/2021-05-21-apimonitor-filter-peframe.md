@@ -27,6 +27,5 @@ title: Creating filter template for apimonitor
 
 now using the script we can create the filter xml for apimonitr.
 ### demo
-[![asciicast](https://asciinema.org/a/u7m3w4SYv1Am8by7MHOLZzoW5.svg)](https://asciinema.org/a/u7m3w4SYv1Am8by7MHOLZzoW5)
-
+[![asciicast](https://asciinema.org/a/415543.svg)](https://asciinema.org/a/415543)
 now just load xml file creaed the file see the magic.
