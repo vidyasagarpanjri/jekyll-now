@@ -27,5 +27,6 @@ During the Dynamic analysis of any file in window we often(we = me) use apimoito
 
 now using the script we can create the filter xml for apimonitr.
 ### demo
+file [create_apimonitortab.py](https://github.com/vidyasagarpanjri/vidyasagarpanjri.github.io/blob/master/_posts/data/2021-05-21/create_apimonitortab.py)
 [![asciicast](https://asciinema.org/a/415543.svg)](https://asciinema.org/a/415543)
-now just load xml file creaed the file see the magic.
+now just load xml file in the apimonitor  see the magic.
